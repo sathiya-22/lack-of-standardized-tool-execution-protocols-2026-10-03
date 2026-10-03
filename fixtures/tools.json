@@ -1,0 +1,36 @@
+[
+  {
+    "name": "search_web",
+    "description": "Searches the web for a given query.",
+    "parameters": [
+      {
+        "name": "query",
+        "type": "string",
+        "description": "The search query.",
+        "required": true
+      }
+    ],
+    "execution_uri": "local:///handlers/search_web"
+  },
+  {
+    "name": "get_weather",
+    "description": "Retrieves current weather information for a city.",
+    "parameters": [
+      {
+        "name": "city",
+        "type": "string",
+        "description": "The city name.",
+        "required": true
+      },
+      {
+        "name": "unit",
+        "type": "string",
+        "description": "Temperature unit (e.g., 'celsius', 'fahrenheit').",
+        "required": false,
+        "properties": null,
+        "items": null
+      }
+    ],
+    "execution_uri": "local:///handlers/get_weather"
+  }
+]

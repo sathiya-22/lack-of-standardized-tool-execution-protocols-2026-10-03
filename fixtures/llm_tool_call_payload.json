@@ -1,0 +1,8 @@
+{
+  "tool_name": "search_web",
+  "arguments": {
+    "query": "latest news on AI breakthroughs"
+  },
+  "request_id": "llm_req_12345",
+  "callback_uri": "http://localhost:8001/agent/callback"
+}

@@ -1,0 +1,21 @@
+[project]
+name = "agenttoolkit"
+version = "0.1.0"
+description = "Standardized Tool Execution Protocols for Agentic AI"
+authors = [{ name = "AutoScout", email = "autoscout@example.com" }]
+dependencies = [
+    "pydantic>=2.0",
+    "pydantic-settings",
+    "httpx", # For simulating HTTP-based result loading
+    "anyio", # For async operations
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = { text = "MIT" }
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
